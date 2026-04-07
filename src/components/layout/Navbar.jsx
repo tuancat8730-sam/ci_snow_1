@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="container-xl">
           {/* Brand */}
           <Link to="/" className="navbar-brand d-flex align-items-center gap-2">
-            <img src="/images/Logo.png" alt="Capital Snow logo" className="navbar-logo-img" />
+            <img src={`${import.meta.env.BASE_URL}images/Logo.png`} alt="Capital Snow logo" className="navbar-logo-img" />
             <span>Capital <span>Snow</span></span>
           </Link>
 

@@ -4,11 +4,11 @@
   display: flex;
   align-items: center;
   padding-top: 7rem; /* account for topbar (32px) + navbar (~80px) */
-  background-image: url('/images/Hero.jpg');
+  /* background-image set via inline style in Hero.jsx using import.meta.env.BASE_URL */
   background-size: cover;
   background-position: center;
   background-attachment: fixed;
-  /* Fallback gradient when no image provided */
+  /* Fallback when no image provided */
   background-color: var(--color-primary-dark);
 }
 

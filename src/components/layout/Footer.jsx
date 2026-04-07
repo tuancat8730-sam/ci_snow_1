@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Col 1: Brand */}
           <div className="col-lg-3 col-md-6">
             <Link to="/" className="footer-brand d-flex align-items-center gap-2">
-              <img src="/images/Logo.png" alt="Capital Snow logo" className="footer-logo-img" />
+              <img src={`${import.meta.env.BASE_URL}images/Logo.png`} alt="Capital Snow logo" className="footer-logo-img" />
               <span>Capital <span>Snow</span></span>
             </Link>
             <p className="footer-tagline">

@@ -12,7 +12,10 @@ export default function Hero() {
   }
 
   return (
-    <section className="hero-section">
+    <section
+      className="hero-section"
+      style={{ backgroundImage: `url(${import.meta.env.BASE_URL}images/Hero.jpg)` }}
+    >
       <div className="hero-overlay" />
 
       <div className="container-xl hero-content">
