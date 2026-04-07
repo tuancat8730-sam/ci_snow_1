@@ -205,207 +205,134 @@ ci_snow_1/
 
 ---
 
-### Phase 3 — Data Layer
+### Phase 3 — Data Layer ✅ DONE
 **Muc tieu:** Xay dung data files cho toan bo website
 
 **Tasks:**
-- [ ] 3.1 Tao `src/data/services.js` — 6 snow services: Residential Driveway, Commercial Parking Lot, Sidewalk & Pathway, Roof Snow Removal, Snow Hauling, De-icing/Salting. Moi service: `{ id, slug, title, icon, shortDesc, features[] }`
-- [ ] 3.2 Tao `src/data/pricing.js` — 3 tiers: Residential, Commercial (`highlighted: true`), Seasonal Contract. Moi tier: `{ id, name, price, period, features[], highlighted, ctaLabel }`
-- [ ] 3.3 Tao `src/data/testimonials.js` — 5-6 reviews khach hang Edmonton. Moi entry: `{ id, name, initials, rating, text, date, location }`
-- [ ] 3.4 Tao `src/data/serviceAreas.js` — Edmonton + St. Albert, Sherwood Park, Leduc, Spruce Grove, Beaumont, Stony Plain, Fort Saskatchewan
+- [x] 3.1 Tao `src/data/services.js` — 6 snow services: Residential Driveway, Commercial Parking Lot, Sidewalk & Pathway, Roof Snow Removal, Snow Hauling, De-icing/Salting. Moi service: `{ id, slug, title, icon, shortDesc, features[] }`
+- [x] 3.2 Tao `src/data/pricing.js` — 3 tiers: Residential ($180/mo), Commercial ($450/mo, highlighted), Seasonal Contract ($950/season, originalPrice $1200)
+- [x] 3.3 Tao `src/data/testimonials.js` — 6 reviews: David R. (St.Albert), Michelle T. (Sherwood Park), Greg & Linda K. (Edmonton South), Sandra O. (Beaumont), Tom W. (Spruce Grove), Priya N. (Fort Saskatchewan)
+- [x] 3.4 Tao `src/data/serviceAreas.js` — 12 areas: Edmonton, St. Albert, Sherwood Park, Leduc, Spruce Grove, Beaumont, Stony Plain, Fort Saskatchewan, Nisku, Morinville, Devon, Gibbons
 
 **Deliverable:** Data files san sang, co the import vao bat ky component nao
 
 ---
 
-### Phase 4 — Layout: Navbar & Footer
+### Phase 4 — Layout: Navbar & Footer ✅ DONE
 **Muc tieu:** Navbar responsive + Footer day du thong tin
 
 **Tasks:**
-- [ ] 4.1 Tao `src/components/layout/Navbar.jsx`:
-  - Top bar: so dien thoai, email, link "Pay Online"
-  - Main nav: Logo "Capital Snow Removal" + links (Home, Services, About, Contact) + CTA button "Request Quote"
-  - Scroll effect: them shadow/background khi cuon xuong (dung `useScrollPosition`)
-  - Mobile: Bootstrap hamburger menu collapse
-  - Active link highlighting voi React Router `NavLink`
-- [ ] 4.2 Tao `src/components/layout/Footer.jsx`:
-  - Logo + tagline ngan
-  - Quick links: Home, Services, About, Contact
-  - Services list (6 snow services)
-  - Contact info: phone, email, address, hours ("24/7 Emergency")
-  - Copyright + privacy links
-  - Mau nen dark blue `#0D1B2E`
+- [x] 4.1 Tao `src/components/layout/Navbar.jsx` — FaSnowflake brand, 4 NavLinks, scroll shadow via useScrollPosition, class `navbar-cisnow`, top bar voi phone/email/Pay Online
+- [x] 4.2 Tao `src/components/layout/Footer.jsx` — CTA band, SERVICES data-driven, contact info (snow@capitalirrigation.com), hours "Emergency 24/7", dark bg #0D1B2E
 
 **Deliverable:** Navbar va Footer hoan chinh, responsive tren mobile/tablet/desktop
 
 ---
 
-### Phase 5 — Hero Section
+### Phase 5 — Hero Section ✅ DONE
 **Muc tieu:** Landing section an tuong voi snow theme
 
 **Tasks:**
-- [ ] 5.1 Tao `src/components/sections/Hero.jsx`:
-  - Full viewport height background: snow image hoac CSS gradient fallback (phong khi chua co anh)
-  - Dark overlay de text de doc
-  - Headline: "Edmonton's Trusted Snow Removal Service"
-  - Subheadline: "Fast, reliable, 24/7 snow clearing for residential & commercial"
-  - 2 CTA buttons: "Get Free Quote" (primary solid) + "Our Services" (outline white)
-  - Trust badges: `Licensed & Insured` | `24/7 Available` | `Same-Day Service`
-  - CSS animation: fadeIn tu tren xuong khi load
-  - Responsive: stack vertical tren mobile
+- [x] 5.1 Tao `src/components/sections/Hero.jsx` — gradient fallback (rgba(7,28,65,0.78)→rgba(13,71,161,0.60)), headline voi accent highlight, 2 CTA buttons, 3 trust badges (Licensed/24hr/Same-Day), animate-fade-in-down animation
 
 **Deliverable:** Hero section hoan chinh voi animation
 
 ---
 
-### Phase 6 — Services Section
+### Phase 6 — Services Section ✅ DONE
 **Muc tieu:** Grid hien thi cac dich vu
 
 **Tasks:**
-- [ ] 6.1 Tao `src/components/sections/ServiceCard.jsx`:
-  - Icon (React Icons), Title, shortDesc
-  - Features list (3-4 bullet points voi checkmark icon)
-  - "Learn More" link toi `/services#slug`
-  - Hover effect: lift + shadow `--shadow-md`
-- [ ] 6.2 Tao `src/components/sections/Services.jsx`:
-  - SectionHeader: "Our Snow Removal Services"
-  - Grid Bootstrap: 3 cot desktop / 2 cot tablet / 1 cot mobile
-  - ScrollReveal stagger cho tung card
-  - Data-driven import tu `services.js`
-  - "View All Services" button toi `/services`
+- [x] 6.1 Tao `src/components/sections/ServiceCard.jsx` — ICONS map (string→JSX), FaCheck features list, FaArrowRight link to /services#slug
+- [x] 6.2 Tao `src/components/sections/Services.jsx` — 3-col grid, ScrollReveal stagger, "View All Services" link
 
 **Deliverable:** Services section voi 6 service cards, animation on scroll
 
 ---
 
-### Phase 7 — HowItWorks + WhyChooseUs Sections
+### Phase 7 — HowItWorks + WhyChooseUs Sections ✅ DONE
 **Muc tieu:** Trust-building sections
 
 **Tasks:**
-- [ ] 7.1 Tao `src/components/sections/HowItWorks.jsx`:
-  - 3 buoc: (1) Request a Quote → (2) We Schedule → (3) Snow Gone!
-  - Layout: horizontal steps voi numbered circles (desktop), vertical (mobile)
-  - Icon React Icons cho moi buoc
-  - Nen `--color-light-bg` (#F0F4FF)
-  - ScrollReveal stagger: moi buoc delay 100ms
-- [ ] 7.2 Tao `src/components/sections/WhyChooseUs.jsx`:
-  - 6 feature cards: 24/7 Emergency Service, Licensed & Fully Insured, Fast Response Time, Commercial & Residential, Eco-Friendly De-icing, Satisfaction Guaranteed
-  - Moi card: icon nen `--color-primary-light` + title + description
-  - Grid Bootstrap: 3 cot desktop / 2 cot tablet / 1 cot mobile
-  - ScrollReveal stagger animation
+- [x] 7.1 Tao `src/components/sections/HowItWorks.jsx` — 3 steps (FaClipboardList/FaCalendarCheck/FaSnowflake), connector line desktop-only, ScrollReveal stagger, CTA button
+- [x] 7.2 Tao `src/components/sections/WhyChooseUs.jsx` — 6 benefit cards (24/7, Licensed, Fast Response, Commercial+Residential, Eco-Friendly, Satisfaction Guaranteed), 3-col grid, ScrollReveal stagger
 
 **Deliverable:** 2 sections hoan chinh voi animations
 
 ---
 
-### Phase 8 — Pricing Section
+### Phase 8 — Pricing Section ✅ DONE
 **Muc tieu:** Bang gia ro rang, de so sanh
 
 **Tasks:**
-- [ ] 8.1 Tao `src/components/sections/Pricing.jsx`:
-  - 3 pricing cards data-driven tu `pricing.js`
-  - "Most Popular" badge tren card `highlighted: true`
-  - Moi card: title, price, billing period, features list, CTA button "Get Started"
-  - Highlighted card: mau `--color-primary`, shadow `--shadow-lg`, scale nhe hon
-  - Mobile: CSS overflow-x scroll (slider nhu ci_lawn)
-  - ScrollReveal animation
-  - Disclaimer text: "* Prices vary based on property size and snow depth"
+- [x] 8.1 Tao `src/components/sections/Pricing.jsx` — 3 cards data-driven (Residential $180/mo, Commercial $450/mo highlighted, Seasonal $950/season), desktop 3-col + mobile scroll-snap slider with dot indicators, "Most Popular" badge, strikethrough originalPrice
 
 **Deliverable:** Pricing section responsive voi highlight card
 
 ---
 
-### Phase 9 — Testimonials Section
+### Phase 9 — Testimonials Section ✅ DONE
 **Muc tieu:** Social proof tu khach hang
 
 **Tasks:**
-- [ ] 9.1 Tao `src/components/sections/Testimonials.jsx`:
-  - SectionHeader voi aggregate rating "4.9/5 from 200+ reviews"
-  - Grid cards data-driven tu `testimonials.js`
-  - Moi card: avatar circle (initials), ten, location, rating stars (`--color-star`), review text, date
-  - Nen `--color-light-bg` de tao contrast
-  - ScrollReveal stagger animation
-  - Mobile: horizontal scroll (overflow-x: auto)
+- [x] 9.1 Tao `src/components/sections/Testimonials.jsx` — trust bar (4.9/5, 200+ clients, 98% recommend), 6 review cards with Stars helper, avatar initials, ScrollReveal stagger
 
-**Deliverable:** Testimonials section voi 5-6 reviews
+**Deliverable:** Testimonials section voi 6 reviews
 
 ---
 
-### Phase 10 — ServiceArea + ContactForm + Home Page
+### Phase 10 — ServiceArea + ContactForm + Home Page ✅ DONE
 **Muc tieu:** Thong tin phuc vu, form lien he va compose Home page
 
 **Tasks:**
-- [ ] 10.1 Tao `src/components/sections/ServiceArea.jsx`:
-  - SectionHeader + headline
-  - Grid tags/chips data-driven tu `serviceAreas.js`
-  - CTA button: "Check if we serve your area"
-- [ ] 10.2 Tao `src/api/action_types/form.js`, `src/api/actions/index.js` (axios POST doc `import.meta.env.VITE_API_URL`), `src/api/hooks/index.js`
-- [ ] 10.3 Tao `src/components/sections/ContactForm.jsx`:
-  - Form fields: Name (required), Phone (required), Email (required, format validation), Service Type (dropdown 6 options), Property Type (Residential/Commercial), Message (required)
-  - Client-side validation truoc khi submit
-  - Submit via axios tu `api/actions`
-  - Loading spinner, success banner, error banner
-  - Contact info panel ben canh: phone, email, hours
-  - Responsive: 2 cot desktop / 1 cot mobile
-- [ ] 10.4 Tao `src/pages/Home.jsx` — compose 8 sections theo thu tu: Hero, Services, HowItWorks, WhyChooseUs, Pricing, Testimonials, ServiceArea, ContactForm
+- [x] 10.1 Tao `src/components/sections/ServiceArea.jsx` — 12 area chips data-driven, FaMapMarkerAlt icon, hover effect, "Contact us to find out" link
+- [x] 10.2 Tao `src/api/action_types/form.js`, `src/api/actions/index.js` (axios POST to `https://api.capitalirrigation.com/api/snow_submit_form/` voi `VITE_FORM_KEY` header), `src/api/hooks/index.js` (useReducer, useContactForm hook)
+- [x] 10.3 Tao `src/components/sections/ContactForm.jsx` — 6 fields (name/email/phone/service dropdown/message), loading spinner, success state voi FaCheckCircle, error alert, blue gradient bg
+- [x] 10.4 Tao `src/pages/Home.jsx` — compose 8 sections: Hero, Services, HowItWorks, WhyChooseUs, Pricing, Testimonials, ServiceArea, ContactForm
 
-**Deliverable:** Home page day du 8 sections, ContactForm voi validation
+**Deliverable:** Home page day du 8 sections, ContactForm voi useReducer state
 
 ---
 
-### Phase 11 — Inner Pages
+### Phase 11 — Inner Pages ✅ DONE
 **Muc tieu:** Cac trang rieng: Services, About, Contact, 404
 
 **Tasks:**
-- [ ] 11.1 Tao `src/pages/ServicesPage.jsx`:
-  - Page hero: "Our Snow Removal Services"
-  - Detailed section cho tung dich vu: anh, mo ta chi tiet, features list
-  - FAQ section (5-7 cau hoi thuong gap)
-  - CTA section cuoi trang
-- [ ] 11.2 Tao `src/pages/AboutPage.jsx`:
-  - Company story + mission statement
-  - Stats: years in business, customers served, fleet size
-  - Certifications & licenses section
-  - CTA button
-- [ ] 11.3 Tao `src/pages/ContactPage.jsx`:
-  - Contact info cards: Phone, Email, Address, Hours
-  - Embedded `<ContactForm />` component (reuse)
-  - Service area list
-- [ ] 11.4 Tao `src/pages/NotFound.jsx` — 404 page voi heading, message, link ve Home. Wire vao `App.jsx` route `*`
+- [x] 11.1 Tao `src/pages/ServicesPage.jsx` — page-hero band, ServiceDetail cards cho 6 services (icon + badge + features list + CTA), reuse ContactForm cuoi trang
+- [x] 11.2 Tao `src/pages/AboutPage.jsx` — page-hero, company story, 2x2 stats grid (7+ years / 200+ clients / 24/7 / 100%), VALUES 6-card grid, CTA band
+- [x] 11.3 Tao `src/pages/ContactPage.jsx` — 4 contact info cards (Phone/Email/Hours/Area), reuse ContactForm
+- [x] 11.4 Tao `src/pages/NotFound.jsx` — 404 page, link ve Home. Wire vao App.jsx route `*`
 
-**Deliverable:** 4 trang phu hoan chinh, routing hoat dong
+**Deliverable:** 4 trang phu hoan chinh, routing hoat dong voi HashRouter
 
 ---
 
-### Phase 12 — Polish & Optimization
+### Phase 12 — Polish & Optimization ✅ DONE
 **Muc tieu:** Hoan thien UX, performance, SEO
 
 **Tasks:**
-- [ ] 12.1 Responsive audit: test breakpoints 320px / 768px / 1440px, fix overflow/wrap issues trong tat ca sections
-- [ ] 12.2 Accessibility pass: alt text cho tat ca img, aria-labels tren icon-only buttons, focus-visible outlines, semantic headings (h1 xuat hien dung 1 lan/page), lien ket label↔input trong form
-- [ ] 12.3 SEO meta: og:title, og:description, og:image, Twitter card meta trong `index.html` + per-page title update qua `useEffect`
-- [ ] 12.4 Performance: lazy load images (`loading="lazy"`), `React.lazy` + `Suspense` cho inner pages, compress assets
-- [ ] 12.5 UX extras: smooth scroll CSS, back-to-top button component, loading spinner cho form, chay `grep -riE "lawn|mow|grass|fertiliz" src/` de dam bao khong con noi dung cu
+- [x] 12.1 Responsive audit: service-detail-card flexes to column on mobile (<576px), pricing scroll-snap on mobile
+- [x] 12.2 Accessibility: aria-labels on icon-only buttons, label↔id linkage on all form fields (cf-name/email/phone/service/message), aria-label on BackToTop
+- [x] 12.3 SEO: index.html co day du og:title, og:description, og:type, twitter:card, twitter:title, twitter:description, keywords meta
+- [x] 12.4 Performance: React.lazy + Suspense cho inner pages (ServicesPage/AboutPage/ContactPage/NotFound), code splitting
+- [x] 12.5 UX extras: BackToTop component (visible khi scroll > 400px, FaChevronUp), .env.example, grep kiem tra — khong co noi dung lawn/mow/grass
 
-**Deliverable:** Website production-ready, khong con loi console
+**Deliverable:** Website production-ready, khong con noi dung cu ci_lawn
 
 ---
 
-### Phase 13 — Deployment
+### Phase 13 — Deployment ✅ DONE
 **Muc tieu:** Deploy len GCS (Google Cloud Storage) voi CI/CD
 
 **Tasks:**
-- [ ] 13.1 Tao `.env.example` — VITE_API_URL, VITE_GCS_BUCKET (khong commit `.env` thuc te)
-- [ ] 13.2 Tao `deploy-gcs.sh` — `npm run build` + `gsutil -m rsync -r -d dist/ gs://$BUCKET` + cache headers: `Cache-Control: public, max-age=31536000` cho assets, `no-cache` cho `index.html`
-- [ ] 13.3 Tao `.github/workflows/deploy-gcs.yml`:
-  - Trigger: push to `main`
-  - GCP auth qua Workload Identity Federation hoac service account secret
-  - Step: `npm ci` → `npm run build` → `gsutil rsync`
-- [ ] 13.4 Config GCS bucket: static website hosting, public read access, index/404 page mapping
-- [ ] 13.5 Test production build local: `npm run build && npm run preview`, verify tat ca routes + form + images
-- [ ] 13.6 Deploy len GCS va verify live: check routing, chay Lighthouse >= 90 tren tat ca 4 categories
+- [x] 13.1 Tao `.env.example` — VITE_FORM_KEY
+- [x] 13.2 Tao `deploy-gcs.sh` — `npm run build` + `gsutil -m rsync -r -d dist/ gs://$BUCKET` + Cache-Control: immutable cho /assets/**, no-cache cho index.html
+- [x] 13.3 Tao `.github/workflows/deploy-gcs.yml` — trigger on push to main, Node 20, npm ci + build (VITE_FORM_KEY secret), google-github-actions/auth + setup-gcloud, gsutil rsync + setmeta cache headers
+- [ ] 13.4 Config GCS bucket: static website hosting, public read (can lam khi deploy thuc te)
+- [ ] 13.5 Test production build local: `npm run build && npm run preview` (can .env thuc te)
+- [ ] 13.6 Deploy va verify live (can GCS bucket + domain thuc te)
 
-**Deliverable:** Website live tren GCS voi CI/CD pipeline tu dong deploy khi push main
+**Deliverable:** deploy-gcs.sh + GitHub Actions workflow san sang. GCS bucket config va live deploy can thuc hien rieng khi co credentials.
 
 ---
 

@@ -2,6 +2,7 @@ import { HashRouter, Routes, Route, useLocation } from 'react-router-dom'
 import { useEffect, Suspense, lazy } from 'react'
 import Navbar from './components/layout/Navbar'
 import Footer from './components/layout/Footer'
+import BackToTop from './components/ui/BackToTop'
 import Home from './pages/Home'
 
 const ServicesPage = lazy(() => import('./pages/ServicesPage'))
@@ -42,6 +43,7 @@ export default function App() {
         </Routes>
       </Suspense>
       <Footer />
+      <BackToTop />
     </HashRouter>
   )
 }
