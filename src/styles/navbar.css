@@ -1,3 +1,62 @@
+/* Partnership strip */
+.navbar-partnership {
+  background-color: #fff;
+  border-bottom: 1px solid rgba(21, 101, 192, 0.12);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1032;
+  height: 48px;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-partnership .container-xl {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.25rem;
+}
+
+.partnership-logo {
+  height: 34px;
+  width: auto;
+  object-fit: contain;
+}
+
+.partnership-divider {
+  width: 1px;
+  height: 28px;
+  background: rgba(21, 101, 192, 0.18);
+  flex-shrink: 0;
+}
+
+.partnership-label {
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--color-gray-text);
+  letter-spacing: 0.04em;
+  white-space: nowrap;
+  text-transform: uppercase;
+}
+
+.partnership-brand {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
+  text-decoration: none;
+}
+
+.partnership-brand-text {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: var(--color-primary-dark);
+  line-height: 1.2;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+
 /* Top bar */
 .navbar-topbar {
   background-color: var(--color-primary-dark);
@@ -7,7 +66,7 @@
   padding: 0.4rem 0;
   text-align: center;
   position: fixed;
-  top: 0;
+  top: 48px;
   left: 0;
   right: 0;
   z-index: 1031;
@@ -42,7 +101,7 @@
 
 /* Main navbar */
 .navbar-cisnow {
-  top: 32px !important;
+  top: 80px !important;
   padding: 1rem 0;
   transition: background-color var(--transition-base), padding var(--transition-base), box-shadow var(--transition-base);
   background-color: transparent;

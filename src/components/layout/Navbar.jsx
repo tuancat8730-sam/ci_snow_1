@@ -3,6 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 import { FaPhone, FaSnowflake } from 'react-icons/fa'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 
+
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
   { label: 'Services', to: '/services' },
@@ -17,6 +18,20 @@ export default function Navbar() {
 
   return (
     <>
+      {/* Partnership strip */}
+      <div className="navbar-partnership">
+        <div className="container-xl">
+          <div className="partnership-brand">
+            <img src={`${import.meta.env.BASE_URL}images/Logo.png`} alt="Capital Snow Removal" className="partnership-logo" />
+            <span className="partnership-brand-text">Capital<br />Snow Removal</span>
+          </div>
+          <div className="partnership-divider" />
+          <span className="partnership-label">In Partnership With</span>
+          <div className="partnership-divider" />
+          <img src={`${import.meta.env.BASE_URL}images/Salisbury_Logo.jpg`} alt="Salisbury Landscaping" className="partnership-logo" />
+        </div>
+      </div>
+
       {/* Top bar */}
       <div className="navbar-topbar">
         <div className="container-xl d-flex align-items-center justify-content-center gap-2">
