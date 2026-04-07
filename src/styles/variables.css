@@ -1,0 +1,27 @@
+:root {
+  /* Primary — Ice/Blue tones */
+  --color-primary: #1565C0;
+  --color-primary-dark: #0D47A1;
+  --color-primary-light: #1E88E5;
+  --color-accent: #90CAF9;
+
+  /* Backgrounds */
+  --color-white: #ffffff;
+  --color-light-bg: #F0F4FF;
+  --color-snow-bg: #F8FAFF;
+  --color-dark-text: #0D1B2E;
+  --color-gray-text: #5A6A7E;
+  --color-star: #FFB300;
+  --color-cta: #E53935;
+  --color-border: rgba(0, 0, 0, 0.08);
+
+  /* Shadows (blue-tinted) */
+  --shadow-sm: 0 2px 8px rgba(21, 101, 192, 0.08);
+  --shadow-md: 0 4px 20px rgba(21, 101, 192, 0.12);
+  --shadow-lg: 0 8px 40px rgba(21, 101, 192, 0.18);
+
+  --transition-base: 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+
+  --section-py: 5rem;
+}

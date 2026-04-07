@@ -1,0 +1,135 @@
+.service-card {
+  border: none;
+  border-radius: 1rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+  height: 100%;
+  cursor: default;
+  overflow: hidden;
+}
+
+.service-card:hover {
+  transform: translateY(-8px);
+  box-shadow: var(--shadow-lg);
+}
+
+.service-icon-circle {
+  width: 64px;
+  height: 64px;
+  background: linear-gradient(135deg, var(--color-primary), var(--color-primary-light));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 1.2rem;
+  font-size: 1.6rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.service-card .card-title {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-dark-text);
+  margin-bottom: 0.6rem;
+}
+
+.service-card .card-text {
+  color: var(--color-gray-text);
+  font-size: 0.93rem;
+  line-height: 1.6;
+}
+
+.service-features {
+  list-style: none;
+  padding: 0;
+  margin: 0.75rem 0 1rem;
+}
+
+.service-features li {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.88rem;
+  color: var(--color-gray-text);
+  padding: 0.25rem 0;
+}
+
+.service-features .check-icon {
+  color: var(--color-primary);
+  font-size: 0.9rem;
+  flex-shrink: 0;
+}
+
+.service-badge {
+  font-size: 0.72rem;
+  font-weight: 600;
+  padding: 0.25rem 0.65rem;
+  border-radius: 2rem;
+  background-color: var(--color-accent);
+  color: var(--color-dark-text);
+  display: inline-block;
+  margin-bottom: 0.5rem;
+}
+
+.service-link {
+  color: var(--color-primary);
+  font-weight: 600;
+  font-size: 0.9rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.3rem;
+  text-decoration: none;
+  transition: color var(--transition-base), gap var(--transition-base);
+}
+
+.service-link:hover {
+  color: var(--color-primary-dark);
+  gap: 0.5rem;
+}
+
+.section-services {
+  padding: var(--section-py) 0;
+  background-color: var(--color-white);
+}
+
+/* WhyChooseUs */
+.why-section {
+  padding: var(--section-py) 0;
+  background-color: var(--color-light-bg);
+}
+
+.benefit-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.6rem;
+}
+
+.benefit-icon {
+  width: 48px;
+  height: 48px;
+  background-color: rgba(21, 101, 192, 0.1);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--color-primary);
+  font-size: 1.3rem;
+  flex-shrink: 0;
+  margin-top: 0.1rem;
+}
+
+.benefit-title {
+  font-weight: 700;
+  color: var(--color-dark-text);
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+.benefit-desc {
+  color: var(--color-gray-text);
+  font-size: 0.9rem;
+  margin: 0;
+  line-height: 1.55;
+}
