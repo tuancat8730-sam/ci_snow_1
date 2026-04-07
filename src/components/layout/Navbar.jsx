@@ -40,7 +40,7 @@ export default function Navbar() {
         <div className="container-xl">
           {/* Brand */}
           <Link to="/" className="navbar-brand d-flex align-items-center gap-2">
-            <FaSnowflake style={{ color: 'var(--color-accent)', fontSize: '1.4rem' }} />
+            <img src="/images/Logo.png" alt="Capital Snow logo" className="navbar-logo-img" />
             <span>Capital <span>Snow</span></span>
           </Link>
 

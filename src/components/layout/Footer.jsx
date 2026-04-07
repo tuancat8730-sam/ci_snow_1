@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom'
-import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock, FaSnowflake } from 'react-icons/fa'
+import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import { SERVICES } from '../../data/services'
 
 const PAGE_LINKS = [
@@ -43,7 +43,7 @@ export default function Footer() {
           {/* Col 1: Brand */}
           <div className="col-lg-3 col-md-6">
             <Link to="/" className="footer-brand d-flex align-items-center gap-2">
-              <FaSnowflake style={{ color: 'var(--color-accent)', fontSize: '1.3rem', flexShrink: 0 }} />
+              <img src="/images/Logo.png" alt="Capital Snow logo" className="footer-logo-img" />
               <span>Capital <span>Snow</span></span>
             </Link>
             <p className="footer-tagline">
