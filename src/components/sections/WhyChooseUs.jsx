@@ -7,8 +7,8 @@ import ScrollReveal from '../ui/ScrollReveal'
 const BENEFITS = [
   {
     icon: <FaClock />,
-    title: '24/7 Emergency Service',
-    desc: 'Storms do not keep business hours - neither do we. Emergency dispatch available around the clock.',
+    title: 'Homegrown Edmonton Business',
+    desc: 'Providing residential snow removal to Edmonton and the surrounding area since 2002.',
   },
   {
     icon: <FaShieldAlt />,
@@ -17,18 +17,18 @@ const BENEFITS = [
   },
   {
     icon: <FaBolt />,
-    title: 'Fast Response Time',
-    desc: 'Commercial clients get a 2-hour SLA. Residential routes are cleared the same day as the snowfall.',
+    title: 'Daily Snow Removal',
+    desc: 'Daily snow removal at the first trace of snow.',
   },
   {
     icon: <FaBuilding />,
-    title: 'Commercial & Residential',
-    desc: 'From single driveways to large commercial parking lots - we have the equipment to handle any size job.',
+    title: 'Commercial',
+    desc: 'We have the equipment to handle most residential properties.',
   },
   {
     icon: <FaLeaf />,
-    title: 'Eco-Friendly De-icing',
-    desc: 'We offer environmentally responsible de-icing products that are safer for pets, kids, and your concrete.',
+    title: 'Rock Chip Application Available',
+    desc: 'Rock chip application available to combat slippery or icy conditions.',
   },
   {
     icon: <FaThumbsUp />,
@@ -43,9 +43,9 @@ export default function WhyChooseUs() {
       <div className="container-xl">
         <ScrollReveal>
           <SectionHeader
-            label="Why Capital Snow"
+            label="Why Capital Snow Removal"
             title="The Reliable Choice for Edmonton Winters"
-            subtitle="Over 200 homes and businesses trust us every season - here is why."
+            subtitle="Over 350 homes trust us every season - here is why."
           />
         </ScrollReveal>
 
