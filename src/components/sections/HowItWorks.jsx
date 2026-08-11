@@ -8,19 +8,19 @@ const STEPS = [
     num: '01',
     icon: <FaClipboardList />,
     title: 'Request a Quote',
-    desc: 'Fill out our quick online form or give us a call. Tell us about your property and the services you need - it only takes 2 minutes.',
+    desc: 'Fill out our quick online form or give us a call. Tell us about your property and the services you need.',
   },
   {
     num: '02',
     icon: <FaCalendarCheck />,
     title: 'We Schedule & Prepare',
-    desc: "We'll confirm your service plan, set your snowfall trigger, and make sure a crew is ready before the next storm rolls in.",
+    desc: "Let us know the timeframe of your coverage, if you'd like rock chips applied and we'll make sure a crew is ready for the next snowfall.",
   },
   {
     num: '03',
     icon: <FaSnowflake />,
-    title: 'Snow Gone - Guaranteed',
-    desc: 'After every qualifying snowfall, our crew clears your property fast. You wake up to a clear driveway, every time.',
+    title: 'Daily Snow Removal',
+    desc: "We'll clear your snow daily at the first trace of snowfall.",
   },
 ]
 
