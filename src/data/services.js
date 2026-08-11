@@ -32,7 +32,7 @@ export const SERVICES = [
     slug: 'sidewalk-pathway',
     title: 'Sidewalk & Pathway',
     icon: 'FaWalking',
-    shortDesc: 'Safe, clear sidewalks and pathways — fully compliant with Edmonton city bylaws.',
+    shortDesc: 'Safe, clear sidewalks and pathways - fully compliant with Edmonton city bylaws.',
     features: [
       'City bylaw compliant clearing',
       'Hand shovelling for tight spaces',
@@ -60,7 +60,7 @@ export const SERVICES = [
     slug: 'snow-hauling',
     title: 'Snow Hauling',
     icon: 'FaTruck',
-    shortDesc: 'When there is nowhere left to push it — we haul accumulated snow off your property.',
+    shortDesc: 'When there is nowhere left to push it - we haul accumulated snow off your property.',
     features: [
       'Commercial & industrial sites',
       'Large accumulation removal',

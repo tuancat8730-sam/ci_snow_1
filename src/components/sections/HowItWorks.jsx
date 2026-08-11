@@ -8,7 +8,7 @@ const STEPS = [
     num: '01',
     icon: <FaClipboardList />,
     title: 'Request a Quote',
-    desc: 'Fill out our quick online form or give us a call. Tell us about your property and the services you need — it only takes 2 minutes.',
+    desc: 'Fill out our quick online form or give us a call. Tell us about your property and the services you need - it only takes 2 minutes.',
   },
   {
     num: '02',
@@ -19,7 +19,7 @@ const STEPS = [
   {
     num: '03',
     icon: <FaSnowflake />,
-    title: 'Snow Gone — Guaranteed',
+    title: 'Snow Gone - Guaranteed',
     desc: 'After every qualifying snowfall, our crew clears your property fast. You wake up to a clear driveway, every time.',
   },
 ]

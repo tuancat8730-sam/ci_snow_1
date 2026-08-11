@@ -8,7 +8,7 @@ const BENEFITS = [
   {
     icon: <FaClock />,
     title: '24/7 Emergency Service',
-    desc: 'Storms do not keep business hours — neither do we. Emergency dispatch available around the clock.',
+    desc: 'Storms do not keep business hours - neither do we. Emergency dispatch available around the clock.',
   },
   {
     icon: <FaShieldAlt />,
@@ -23,7 +23,7 @@ const BENEFITS = [
   {
     icon: <FaBuilding />,
     title: 'Commercial & Residential',
-    desc: 'From single driveways to large commercial parking lots — we have the equipment to handle any size job.',
+    desc: 'From single driveways to large commercial parking lots - we have the equipment to handle any size job.',
   },
   {
     icon: <FaLeaf />,
@@ -33,7 +33,7 @@ const BENEFITS = [
   {
     icon: <FaThumbsUp />,
     title: 'Satisfaction Guaranteed',
-    desc: 'Not happy with our work? We will come back and re-do it — free of charge. Your satisfaction is our priority.',
+    desc: 'Not happy with our work? We will come back and re-do it - free of charge. Your satisfaction is our priority.',
   },
 ]
 
@@ -45,7 +45,7 @@ export default function WhyChooseUs() {
           <SectionHeader
             label="Why Capital Snow"
             title="The Reliable Choice for Edmonton Winters"
-            subtitle="Over 200 homes and businesses trust us every season — here is why."
+            subtitle="Over 200 homes and businesses trust us every season - here is why."
           />
         </ScrollReveal>
 
