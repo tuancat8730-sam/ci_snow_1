@@ -6,7 +6,7 @@ export const TESTIMONIALS = [
     location: 'St. Albert, AB',
     rating: 5,
     date: 'Jan 2025',
-    quote: 'Capital Snow showed up within 90 minutes of the storm ending — driveway was spotless. Been a customer for three winters and they have never let me down.',
+    quote: 'Capital Snow showed up within 90 minutes of the storm ending - driveway was spotless. Been a customer for three winters and they have never let me down.',
   },
   {
     id: 2,
@@ -24,7 +24,7 @@ export const TESTIMONIALS = [
     location: 'Edmonton South, AB',
     rating: 5,
     date: 'Dec 2024',
-    quote: 'They cleared our commercial parking lot faster than any company we have used before. The pre-treatment before the storm was a game changer — zero ice issues.',
+    quote: 'They cleared our commercial parking lot faster than any company we have used before. The pre-treatment before the storm was a game changer - zero ice issues.',
   },
   {
     id: 4,
@@ -51,6 +51,6 @@ export const TESTIMONIALS = [
     location: 'Fort Saskatchewan, AB',
     rating: 5,
     date: 'Feb 2025',
-    quote: 'Responsive, reliable, and reasonably priced. I have tried three other snow companies — Capital is the first one I am sticking with long term. Great service.',
+    quote: 'Responsive, reliable, and reasonably priced. I have tried three other snow companies - Capital is the first one I am sticking with long term. Great service.',
   },
 ]

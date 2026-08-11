@@ -7,10 +7,10 @@ import ScrollReveal from '../components/ui/ScrollReveal'
 
 const VALUES = [
   { icon: <FaShieldAlt />, title: 'Safety First', desc: 'Every crew member is trained in safe snow removal practices. We carry full liability and WCB coverage on every job.' },
-  { icon: <FaClock />, title: 'Always Reliable', desc: 'We show up — every time, on time. Our clients trust us because we have never missed a scheduled service in seven seasons.' },
+  { icon: <FaClock />, title: 'Always Reliable', desc: 'We show up - every time, on time. Our clients trust us because we have never missed a scheduled service in seven seasons.' },
   { icon: <FaBolt />, title: 'Fast Response', desc: "When a storm hits, we don't wait. Our commercial clients are on a 2-hour SLA; residential routes are cleared same-day." },
   { icon: <FaLeaf />, title: 'Eco-Responsible', desc: 'We use environmentally responsible de-icing products that are safer for pets, children, and your concrete surfaces.' },
-  { icon: <FaThumbsUp />, title: '100% Satisfaction', desc: "Not happy? We'll come back and re-do it — free of charge. Your satisfaction is the only metric that matters." },
+  { icon: <FaThumbsUp />, title: '100% Satisfaction', desc: "Not happy? We'll come back and re-do it - free of charge. Your satisfaction is the only metric that matters." },
   { icon: <FaBuilding />, title: 'Local & Proud', desc: "Capital Snow is locally owned and operated in Edmonton. We live here, work here, and we're invested in this community." },
 ]
 
@@ -24,7 +24,7 @@ export default function AboutPage() {
             <p className="page-hero-label">About Us</p>
             <h1 className="page-hero-title">Edmonton's Trusted Snow Removal Team</h1>
             <p className="page-hero-subtitle">
-              Family-owned and operated since 2017 — serving homes and businesses across the greater Edmonton area.
+              Family-owned and operated since 2017 - serving homes and businesses across the greater Edmonton area.
             </p>
           </ScrollReveal>
         </div>
@@ -44,8 +44,8 @@ export default function AboutPage() {
                   200 homes and businesses every winter season.
                 </p>
                 <p className="mb-4" style={{ color: 'var(--color-gray-text)', lineHeight: 1.8 }}>
-                  We invest in modern equipment, eco-friendly products, and ongoing training so that every visit — whether
-                  after a light dusting or a record-breaking blizzard — meets the same high standard our clients have
+                  We invest in modern equipment, eco-friendly products, and ongoing training so that every visit - whether
+                  after a light dusting or a record-breaking blizzard - meets the same high standard our clients have
                   come to expect.
                 </p>
                 <Link to="/contact" className="btn btn-primary rounded-pill px-5 fw-semibold">
@@ -81,7 +81,7 @@ export default function AboutPage() {
             <SectionHeader
               label="Our Values"
               title="What Sets Us Apart"
-              subtitle="These aren't just words on a page — they're the principles behind every job we do."
+              subtitle="These aren't just words on a page - they're the principles behind every job we do."
             />
           </ScrollReveal>
 

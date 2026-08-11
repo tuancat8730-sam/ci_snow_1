@@ -12,7 +12,7 @@ export default function Services() {
           <SectionHeader
             label="What We Offer"
             title="Our Snow Removal Services"
-            subtitle="From single driveways to large commercial lots — we handle every snow removal need with speed and reliability."
+            subtitle="Daily snow removal for residential properties"
           />
         </ScrollReveal>
 

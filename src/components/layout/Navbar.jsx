@@ -54,7 +54,7 @@ export default function Navbar() {
       <div className="navbar-topbar">
         <div className="container-xl d-flex align-items-center justify-content-center gap-2">
           <FaSnowflake style={{ fontSize: '0.8rem' }} />
-          <span>Fast, reliable snow removal — 24/7 emergency service available.</span>
+          <span>Fast, reliable snow removal - Reliable 7 day per week snow removal service.</span>
           <a
             href="https://capitalirrigation.com/payment/"
             target="_blank"
@@ -74,7 +74,7 @@ export default function Navbar() {
           {/* Brand */}
           <Link to="/" className="navbar-brand d-flex align-items-center gap-2">
             <img src={`${import.meta.env.BASE_URL}images/Logo.png`} alt="Capital Snow logo" className="navbar-logo-img" />
-            <span>Capital <span>Snow</span></span>
+            <span>Capital <span>Snow Removal</span></span>
           </Link>
 
           {/* Toggler */}

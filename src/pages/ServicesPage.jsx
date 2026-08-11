@@ -65,7 +65,7 @@ export default function ServicesPage() {
             <SectionHeader
               label="What We Offer"
               title="Full-Service Snow Management"
-              subtitle="From driveways to rooftops — we have every snow removal need covered."
+              subtitle="From driveways to rooftops - we have every snow removal need covered."
             />
           </ScrollReveal>
 

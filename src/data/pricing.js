@@ -32,7 +32,7 @@ export const PRICING_TIERS = [
       'Monthly service report',
     ],
     ctaText: 'Get Started',
-    disclaimer: 'Up to 20 stalls — larger lots quoted on-site',
+    disclaimer: 'Up to 20 stalls - larger lots quoted on-site',
   },
   {
     id: 'seasonal',
@@ -46,9 +46,9 @@ export const PRICING_TIERS = [
       'Unlimited visits per snowfall',
       'Roof snow removal (1x/season)',
       'Snow hauling included',
-      'Locked-in rate — no surprises',
+      'Locked-in rate - no surprises',
     ],
     ctaText: 'Book Now',
-    disclaimer: 'Best value — save up to 20% vs monthly',
+    disclaimer: 'Best value - save up to 20% vs monthly',
   },
 ]

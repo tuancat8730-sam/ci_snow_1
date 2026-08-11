@@ -28,7 +28,7 @@ function PricingCard({ tier }) {
       </div>
 
       <p className="pricing-note">
-        {tier.disclaimer || 'Starting price — contact us for exact quote'}
+        {tier.disclaimer || 'Starting price - contact us for exact quote'}
       </p>
 
       <ul className="pricing-features">

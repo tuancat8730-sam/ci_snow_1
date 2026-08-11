@@ -48,7 +48,7 @@ export default function Footer() {
             </Link>
             <p className="footer-tagline">
               Fast, reliable snow removal for residential and commercial properties
-              across Edmonton and the surrounding area — 24/7.
+              across Edmonton and the surrounding area - 24/7.
             </p>
           </div>
 
