@@ -1,20 +1,38 @@
 import { useState } from 'react'
-import { Link, NavLink } from 'react-router-dom'
+import { Link, NavLink, useNavigate, useLocation } from 'react-router-dom'
 import { FaPhone, FaSnowflake } from 'react-icons/fa'
 import { useScrollPosition } from '../../hooks/useScrollPosition'
 
 
 const NAV_LINKS = [
   { label: 'Home', to: '/' },
-  { label: 'Services', to: '/services' },
-  { label: 'About', to: '/about' },
-  { label: 'Contact', to: '/contact' },
+  { label: 'Services', sectionId: 'services' },
+  { label: 'About', sectionId: 'why-section' },
+  { label: 'Contact', sectionId: 'contact-form' },
 ]
 
 export default function Navbar() {
   const scrollY = useScrollPosition()
   const scrolled = scrollY > 80
   const [menuOpen, setMenuOpen] = useState(false)
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const scrollToSection = (sectionId) => {
+    const el = document.getElementById(sectionId)
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleSectionClick = (sectionId) => (event) => {
+    event.preventDefault()
+    setMenuOpen(false)
+    if (location.pathname === '/') {
+      scrollToSection(sectionId)
+    } else {
+      navigate('/')
+      setTimeout(() => scrollToSection(sectionId), 100)
+    }
+  }
 
   return (
     <>
@@ -74,14 +92,24 @@ export default function Navbar() {
           <div className={`collapse navbar-collapse${menuOpen ? ' show' : ''}`}>
             <ul className="navbar-nav mx-auto gap-1">
               {NAV_LINKS.map((link) => (
-                <li key={link.to} className="nav-item">
-                  <NavLink
-                    to={link.to}
-                    className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
-                    onClick={() => setMenuOpen(false)}
-                  >
-                    {link.label}
-                  </NavLink>
+                <li key={link.label} className="nav-item">
+                  {link.sectionId ? (
+                    <a
+                      href="/"
+                      className="nav-link"
+                      onClick={handleSectionClick(link.sectionId)}
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <NavLink
+                      to={link.to}
+                      className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
+                      onClick={() => setMenuOpen(false)}
+                    >
+                      {link.label}
+                    </NavLink>
+                  )}
                 </li>
               ))}
             </ul>
