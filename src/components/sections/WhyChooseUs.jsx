@@ -39,7 +39,7 @@ const BENEFITS = [
 
 export default function WhyChooseUs() {
   return (
-    <section className="why-section">
+    <section className="why-section" id="why-section">
       <div className="container-xl">
         <ScrollReveal>
           <SectionHeader
