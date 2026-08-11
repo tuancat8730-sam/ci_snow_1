@@ -22,12 +22,12 @@ export default function Hero() {
         <div className="row">
           <div className="col-lg-8">
             <h1 className="hero-title text-white animate-fade-in-down animate-fade-in-down-1">
-              Edmonton's Trusted{' '}
+              Edmonton and Area Residential{' '}
               <span style={{ color: 'var(--color-accent)' }}>Snow Removal</span>{' '}
               Service
             </h1>
             <p className="hero-subtitle animate-fade-in-down animate-fade-in-down-2">
-              Fast, reliable, 24/7 snow clearing for residential and commercial properties.
+              Homegrown in Edmonton and providing residential snow removal since 2002.
               Licensed, fully insured, and ready when the next storm hits.
             </p>
 
