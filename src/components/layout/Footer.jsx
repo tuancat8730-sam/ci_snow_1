@@ -44,7 +44,7 @@ export default function Footer() {
           <div className="col-lg-3 col-md-6">
             <Link to="/" className="footer-brand d-flex align-items-center gap-2">
               <img src={`${import.meta.env.BASE_URL}images/Logo.png`} alt="Capital Snow logo" className="footer-logo-img" />
-              <span>Capital <span>Snow</span></span>
+              <span>Capital <span>Snow Removal</span></span>
             </Link>
             <p className="footer-tagline">
               Fast, reliable snow removal for residential and commercial properties
