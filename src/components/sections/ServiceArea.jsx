@@ -12,7 +12,7 @@ export default function ServiceArea() {
           <SectionHeader
             label="Coverage Zone"
             title="Areas We Serve"
-            subtitle="We provide snow removal services throughout Edmonton and the surrounding communities."
+            subtitle="We provide snow removal services throughout most of Edmonton and the surrounding communities."
           />
         </ScrollReveal>
 
