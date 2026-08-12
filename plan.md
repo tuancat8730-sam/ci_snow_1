@@ -223,7 +223,7 @@ ci_snow_1/
 
 **Tasks:**
 - [x] 4.1 Tao `src/components/layout/Navbar.jsx` — FaSnowflake brand, 4 NavLinks, scroll shadow via useScrollPosition, class `navbar-cisnow`, top bar voi phone/email/Pay Online
-- [x] 4.2 Tao `src/components/layout/Footer.jsx` — CTA band, SERVICES data-driven, contact info (snow@capitalirrigation.com), hours "Emergency 24/7", dark bg #0D1B2E
+- [x] 4.2 Tao `src/components/layout/Footer.jsx` — CTA band, SERVICES data-driven, contact info (customerservice@capitalirrigation.com), hours "Emergency 24/7", dark bg #0D1B2E
 
 **Deliverable:** Navbar va Footer hoan chinh, responsive tren mobile/tablet/desktop
 

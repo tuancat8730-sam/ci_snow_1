@@ -12,8 +12,8 @@ const CONTACT_INFO = [
   {
     icon: <FaEnvelope />,
     label: 'Email',
-    value: 'snow@capitalirrigation.com',
-    href: 'mailto:snow@capitalirrigation.com',
+    value: 'customerservice@capitalirrigation.com',
+    href: 'mailto:customerservice@capitalirrigation.com',
   },
   {
     icon: <FaClock />,

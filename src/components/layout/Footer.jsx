@@ -88,10 +88,10 @@ export default function Footer() {
             <div className="footer-contact-item">
               <FaEnvelope />
               <a
-                href="mailto:snow@capitalirrigation.com"
+                href="mailto:customerservice@capitalirrigation.com"
                 style={{ color: 'inherit', textDecoration: 'none' }}
               >
-                snow@capitalirrigation.com
+                customerservice@capitalirrigation.com
               </a>
             </div>
             <div className="footer-contact-item">
