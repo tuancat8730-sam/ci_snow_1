@@ -16,16 +16,20 @@ export default function ServiceArea() {
           />
         </ScrollReveal>
 
-        <ScrollReveal>
-          <div className="service-area-grid">
-            {SERVICE_AREAS.map((area) => (
-              <div className="service-area-chip" key={area}>
-                <FaMapMarkerAlt className="area-pin" />
-                {area}
+        <div className="row row-cols-1 row-cols-sm-3 g-4 justify-content-center service-area-cards">
+          {SERVICE_AREAS.map((area, i) => (
+            <ScrollReveal key={area} delay={i + 1}>
+              <div className="col">
+                <div className="service-area-card text-center h-100">
+                  <div className="service-area-icon">
+                    <FaMapMarkerAlt />
+                  </div>
+                  <p className="service-area-name">{area}</p>
+                </div>
               </div>
-            ))}
-          </div>
-        </ScrollReveal>
+            </ScrollReveal>
+          ))}
+        </div>
 
         <ScrollReveal>
           <p className="text-center mt-4" style={{ color: 'var(--color-gray-text)', fontSize: '0.9rem' }}>
