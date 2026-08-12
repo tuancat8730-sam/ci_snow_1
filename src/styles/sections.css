@@ -435,6 +435,11 @@
   color: var(--color-dark-text);
 }
 
+.contact-form-card .form-check-label {
+  color: var(--color-dark-text);
+  font-size: 0.88rem;
+}
+
 .contact-form-card .form-control,
 .contact-form-card .form-select {
   border-radius: 0.6rem;
