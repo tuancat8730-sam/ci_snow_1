@@ -41,7 +41,7 @@ export default function Testimonials() {
           <SectionHeader
             label="Customer Reviews"
             title="What Our Clients Say"
-            subtitle="Real feedback from homeowners and businesses across the Edmonton area."
+            subtitle="Real feedback from homeowners across the Edmonton area."
           />
         </ScrollReveal>
 
@@ -55,7 +55,7 @@ export default function Testimonials() {
             </div>
             <div className="trust-stat">
               <FaAward className="trust-stat-icon" />
-              <span className="trust-stat-value">200+</span>
+              <span className="trust-stat-value">350+</span>
               <span className="trust-stat-label">Happy Clients</span>
             </div>
             <div className="trust-stat">
