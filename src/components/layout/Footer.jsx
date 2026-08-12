@@ -58,7 +58,7 @@ export default function Footer() {
             <ul className="footer-links">
               {SERVICES.map((s) => (
                 <li key={s.id}>
-                  <Link to={`/services#${s.slug}`}>{s.title}</Link>
+                  <span>{s.title}</span>
                 </li>
               ))}
             </ul>
@@ -70,7 +70,7 @@ export default function Footer() {
             <ul className="footer-links">
               {PAGE_LINKS.map((p) => (
                 <li key={p.to + p.label}>
-                  <Link to={p.to}>{p.label}</Link>
+                  <span>{p.label}</span>
                 </li>
               ))}
             </ul>
