@@ -875,7 +875,8 @@ a.contact-info-value:hover {
   margin-bottom: 0.6rem;
 }
 
-.footer-links a {
+.footer-links a,
+.footer-links span {
   color: rgba(255, 255, 255, 0.72);
   text-decoration: none;
   font-size: 0.9rem;
