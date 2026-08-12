@@ -73,8 +73,8 @@ export default function Pricing() {
         <ScrollReveal>
           <SectionHeader
             label="Transparent Pricing"
-            title="Simple, Honest Packages"
-            subtitle="No hidden fees. No surprise charges. Just dependable snow removal at fair prices."
+            title="Simple Snow Removal Packages"
+            subtitle="No hidden fees. No surprise charges. Just reliable snow removal at fair prices."
           />
         </ScrollReveal>
 
