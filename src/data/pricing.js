@@ -18,19 +18,17 @@ export const PRICING_TIERS = [
   },
   {
     id: 'seasonal',
-    name: 'Seasonal Contract',
+    name: 'Seasonal Contract Available',
     price: '$950',
     priceNote: 'season',
     originalPrice: '$1,200',
     isHighlighted: false,
     features: [
-      'Full season (Nov 1 – Mar 31)',
-      'Unlimited visits per snowfall',
-      'Roof snow removal (1x/season)',
-      'Snow hauling included',
+      'Coverage available from Oct 15 - Apr 15',
+      'Daily snow removal at the first trace of snow',
       'Locked-in rate - no surprises',
     ],
     ctaText: 'Book Now',
-    disclaimer: 'Best value - save up to 20% vs monthly',
+    disclaimer: null,
   },
 ]
