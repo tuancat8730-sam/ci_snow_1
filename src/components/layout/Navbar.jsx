@@ -105,7 +105,10 @@ export default function Navbar() {
                     <NavLink
                       to={link.to}
                       className={({ isActive }) => `nav-link${isActive ? ' active' : ''}`}
-                      onClick={() => setMenuOpen(false)}
+                      onClick={() => {
+                        setMenuOpen(false)
+                        window.scrollTo({ top: 0, behavior: 'smooth' })
+                      }}
                     >
                       {link.label}
                     </NavLink>
