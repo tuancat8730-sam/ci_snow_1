@@ -79,7 +79,7 @@ export default function Pricing() {
         </ScrollReveal>
 
         {/* Desktop: 3-column grid */}
-        <div className="row row-cols-1 row-cols-md-3 g-4 align-items-center d-none d-md-flex">
+        <div className="row row-cols-1 row-cols-md-3 g-4 align-items-center justify-content-center d-none d-md-flex">
           {PRICING_TIERS.map((tier, i) => (
             <ScrollReveal key={tier.id} delay={i + 1}>
               <div className="h-100">
