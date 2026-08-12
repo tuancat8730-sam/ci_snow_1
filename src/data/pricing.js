@@ -2,7 +2,7 @@ export const PRICING_TIERS = [
   {
     id: 'residential',
     name: 'Residential',
-    price: '$180',
+    price: '$225',
     priceNote: 'month',
     originalPrice: null,
     isHighlighted: false,
