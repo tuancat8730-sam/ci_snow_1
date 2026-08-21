@@ -11,21 +11,6 @@ function PricingCard({ tier }) {
       {tier.isHighlighted && <span className="popular-badge">Most Popular</span>}
       <p className="pricing-name">{tier.name}</p>
 
-      <div className="pricing-price">
-        {tier.originalPrice && (
-          <span style={{
-            textDecoration: 'line-through',
-            fontSize: '1rem',
-            color: 'var(--color-gray-text)',
-            marginRight: '0.4rem',
-            fontWeight: 500,
-          }}>
-            {tier.originalPrice}
-          </span>
-        )}
-        {tier.price}
-      </div>
-
       <p className="pricing-note">
         {tier.disclaimer || 'Best value - discounted price available'}
       </p>
