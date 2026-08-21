@@ -24,11 +24,10 @@ function PricingCard({ tier }) {
           </span>
         )}
         {tier.price}
-        {tier.priceNote && <span>/{tier.priceNote}</span>}
       </div>
 
       <p className="pricing-note">
-        {tier.disclaimer || 'Starting price - contact us for exact quote'}
+        {tier.disclaimer || 'Best value - discounted price available'}
       </p>
 
       <ul className="pricing-features">
@@ -79,7 +78,7 @@ export default function Pricing() {
         </ScrollReveal>
 
         {/* Desktop: 3-column grid */}
-        <div className="row row-cols-1 row-cols-md-3 g-4 align-items-center justify-content-center d-none d-md-flex">
+        <div className="row row-cols-1 row-cols-md-3 g-4 align-items-stretch justify-content-center d-none d-md-flex">
           {PRICING_TIERS.map((tier, i) => (
             <ScrollReveal key={tier.id} delay={i + 1}>
               <div className="h-100">
@@ -112,7 +111,7 @@ export default function Pricing() {
 
         <ScrollReveal>
           <p className="text-center mt-4" style={{ color: 'var(--color-gray-text)', fontSize: '0.9rem' }}>
-            * Prices vary based on property size and snow depth.{' '}
+            * Prices vary based on property size.{' '}
             <Link
               to="/contact"
               className="fw-semibold"
