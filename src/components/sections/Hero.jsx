@@ -8,7 +8,7 @@ const TRUST_BADGES = [
 
 export default function Hero() {
   const scrollToContact = () => {
-    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })
+    document.getElementById('contact-form')?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
