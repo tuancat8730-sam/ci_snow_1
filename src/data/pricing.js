@@ -14,7 +14,7 @@ export const PRICING_TIERS = [
       'Coverage available from October 15 - April 15',
     ],
     ctaText: 'Get Started',
-    disclaimer: 'Standard residential lot up to 40 ft wide',
+    disclaimer: 'Standard two car attached driveway',
   },
   {
     id: 'seasonal',
