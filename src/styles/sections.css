@@ -784,14 +784,14 @@
   margin-bottom: 0.25rem;
 }
 
-.contact-info-value {
+.contact-info-card .contact-info-value {
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--color-dark-text);
   text-decoration: none;
 }
 
-a.contact-info-value:hover {
+.contact-info-card a.contact-info-value:hover {
   color: var(--color-primary);
 }
 

@@ -18,7 +18,7 @@ const CONTACT_INFO = [
   { icon: <FaPhone />, title: 'Phone', value: '780-989-3987', href: 'tel:7809893987' },
   { icon: <FaEnvelope />, title: 'Email', value: 'customerservice@capitalirrigation.com', href: 'mailto:customerservice@capitalirrigation.com' },
   { icon: <FaMapMarkerAlt />, title: 'Location', value: '4505 97 St NW, Edmonton, AB T6E 5Y8', href: null },
-  { icon: <FaClock />, title: 'Hours', value: 'Emergency service: 24/7 - Office: Mon-Fri 9am-4pm', href: null },
+  { icon: <FaClock />, title: 'Hours', value: 'Office: Mon-Fri 9am-4pm', href: null },
 ]
 
 const EMPTY_FORM = {
