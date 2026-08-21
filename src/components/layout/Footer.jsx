@@ -117,13 +117,8 @@ export default function Footer() {
         </div>
 
         {/* Bottom bar */}
-        <div className="footer-bottom d-flex justify-content-between align-items-center flex-wrap gap-2">
+        <div className="footer-bottom d-flex justify-content-center align-items-center flex-wrap gap-2">
           <span>© {new Date().getFullYear()} Capital Snow Removal. All Rights Reserved.</span>
-          <span>
-            <a href="#" style={{ color: 'inherit' }}>Privacy Policy</a>
-            {' · '}
-            <a href="#" style={{ color: 'inherit' }}>Terms of Service</a>
-          </span>
         </div>
       </div>
     </footer>
