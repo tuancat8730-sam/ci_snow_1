@@ -7,7 +7,7 @@ export const SERVICES = [
     shortDesc: 'Daily residential snow removal at the first trace of snow',
     features: [
       'Daily snow removal at the first trace of snow',
-      'Driveway & front walkway',
+      'Driveway, city sidewalk & front walkway',
       'Rock chip application available',
       'Seasonal contracts available',
     ],
