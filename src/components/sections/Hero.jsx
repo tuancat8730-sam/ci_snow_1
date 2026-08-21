@@ -1,8 +1,8 @@
-import { FaArrowRight, FaPhone, FaShieldAlt, FaClock, FaCheckCircle } from 'react-icons/fa'
+import { FaArrowRight, FaPhone, FaShieldAlt, FaAward, FaCheckCircle } from 'react-icons/fa'
 
 const TRUST_BADGES = [
   { icon: <FaShieldAlt />, value: 'Licensed & Insured' },
-  { icon: <FaClock />, value: '24/7 Available' },
+  { icon: <FaAward />, value: 'Quality Guaranteed' },
   { icon: <FaCheckCircle />, value: 'Same-Day Service' },
 ]
 
