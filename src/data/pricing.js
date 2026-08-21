@@ -2,9 +2,6 @@ export const PRICING_TIERS = [
   {
     id: 'residential',
     name: 'Residential',
-    price: '$225',
-    priceNote: 'month',
-    originalPrice: null,
     isHighlighted: false,
     features: [
       'Standard two car attached garage',
@@ -19,9 +16,6 @@ export const PRICING_TIERS = [
   {
     id: 'seasonal',
     name: 'Seasonal Contract Available',
-    price: '$950',
-    priceNote: 'season',
-    originalPrice: '$1,200',
     isHighlighted: false,
     features: [
       'Coverage available from Oct 15 - Apr 15',
