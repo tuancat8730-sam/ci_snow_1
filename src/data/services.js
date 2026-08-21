@@ -27,18 +27,4 @@ export const SERVICES = [
     ],
     badge: null,
   },
-  {
-    id: 'snow-hauling',
-    slug: 'snow-hauling',
-    title: 'Snow Hauling',
-    icon: 'FaTruck',
-    shortDesc: 'When there is nowhere left to push it - we haul accumulated snow off your property.',
-    features: [
-      'Commercial & industrial sites',
-      'Large accumulation removal',
-      'Dump truck fleet available',
-      'Flexible scheduling',
-    ],
-    badge: null,
-  },
 ]
