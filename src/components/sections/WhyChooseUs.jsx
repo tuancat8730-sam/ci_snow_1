@@ -1,5 +1,5 @@
 import {
-  FaClock, FaShieldAlt, FaBolt, FaBuilding, FaLeaf, FaThumbsUp,
+  FaClock, FaShieldAlt, FaBolt, FaHome, FaLeaf, FaThumbsUp,
 } from 'react-icons/fa'
 import SectionHeader from '../ui/SectionHeader'
 import ScrollReveal from '../ui/ScrollReveal'
@@ -21,8 +21,8 @@ const BENEFITS = [
     desc: 'Daily snow removal at the first trace of snow.',
   },
   {
-    icon: <FaBuilding />,
-    title: 'Commercial',
+    icon: <FaHome />,
+    title: 'Residential',
     desc: 'We have the equipment to handle most residential properties.',
   },
   {
