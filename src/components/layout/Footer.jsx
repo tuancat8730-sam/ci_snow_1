@@ -1,16 +1,34 @@
-import { Link } from 'react-router-dom'
+import { Link, useNavigate, useLocation } from 'react-router-dom'
 import { FaPhone, FaEnvelope, FaMapMarkerAlt, FaClock } from 'react-icons/fa'
 import { SERVICES } from '../../data/services'
 
 const PAGE_LINKS = [
   { label: 'Home', to: '/' },
-  { label: 'Services', to: '/services' },
-  { label: 'About Us', to: '/about' },
-  { label: 'Contact', to: '/contact' },
+  { label: 'Services', sectionId: 'services' },
+  { label: 'About Us', sectionId: 'why-section' },
+  { label: 'Contact', sectionId: 'contact-form' },
   { label: 'Get a Free Quote', to: '/contact' },
 ]
 
 export default function Footer() {
+  const navigate = useNavigate()
+  const location = useLocation()
+
+  const scrollToSection = (sectionId) => {
+    const el = document.getElementById(sectionId)
+    if (el) el.scrollIntoView({ behavior: 'smooth' })
+  }
+
+  const handleSectionClick = (sectionId) => (event) => {
+    event.preventDefault()
+    if (location.pathname === '/') {
+      scrollToSection(sectionId)
+    } else {
+      navigate('/')
+      setTimeout(() => scrollToSection(sectionId), 100)
+    }
+  }
+
   return (
     <footer className="footer">
       {/* CTA Band */}
@@ -69,8 +87,16 @@ export default function Footer() {
             <h6 className="footer-heading">Quick Links</h6>
             <ul className="footer-links">
               {PAGE_LINKS.map((p) => (
-                <li key={p.to + p.label}>
-                  <span>{p.label}</span>
+                <li key={p.label}>
+                  {p.sectionId ? (
+                    <a href="/" onClick={handleSectionClick(p.sectionId)}>{p.label}</a>
+                  ) : p.label === 'Home' ? (
+                    <Link to={p.to} onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+                      {p.label}
+                    </Link>
+                  ) : (
+                    <Link to={p.to}>{p.label}</Link>
+                  )}
                 </li>
               ))}
             </ul>
