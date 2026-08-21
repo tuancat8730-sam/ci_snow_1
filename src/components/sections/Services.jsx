@@ -16,7 +16,7 @@ export default function Services() {
           />
         </ScrollReveal>
 
-        <div className="row row-cols-1 row-cols-md-2 row-cols-xl-3 g-4">
+        <div className="row row-cols-1 row-cols-md-2 g-4 justify-content-center services-grid">
           {SERVICES.map((service, i) => (
             <ScrollReveal key={service.id} delay={Math.min(i + 1, 5)}>
               <ServiceCard service={service} />

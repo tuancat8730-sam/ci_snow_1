@@ -19,7 +19,7 @@ export default function ServiceCard({ service }) {
   return (
     <div className="col">
       <div className="card service-card h-100">
-        <div className="card-body p-4">
+        <div className="card-body p-4 p-lg-5">
           {service.badge && (
             <span className="service-badge">{service.badge}</span>
           )}
