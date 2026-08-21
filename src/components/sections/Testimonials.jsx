@@ -66,7 +66,7 @@ export default function Testimonials() {
           </div>
         </ScrollReveal>
 
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-2 justify-content-center">
           {TESTIMONIALS.map((review, i) => (
             <div className="col" key={review.id}>
               <TestimonialCard review={review} delay={Math.min(i + 1, 5)} />
