@@ -17,7 +17,7 @@ export default function Footer() {
       <div className="footer-cta-band">
         <div className="container-xl d-flex align-items-center justify-content-between flex-wrap gap-3">
           <div>
-            <h3 className="footer-cta-title">Ready to Clear the Way?</h3>
+            <h3 className="footer-cta-title">Out at the first trace of snow!</h3>
             <p className="footer-cta-sub mb-0">
               Join 200+ Edmonton homeowners and businesses who trust Capital Snow Removal.
             </p>
@@ -47,8 +47,8 @@ export default function Footer() {
               <span>Capital <span>Snow Removal</span></span>
             </Link>
             <p className="footer-tagline">
-              Fast, reliable snow removal for residential and commercial properties
-              across Edmonton and the surrounding area - 24/7.
+              Reliable snow removal for residential properties
+              across Edmonton and the surrounding area
             </p>
           </div>
 
@@ -100,7 +100,7 @@ export default function Footer() {
             </div>
             <div className="footer-contact-item">
               <FaClock />
-              <span>Emergency service: 24/7 · Office: Mon–Fri 9am–4pm</span>
+              <span>Office: Mon–Fri 9am–4pm</span>
             </div>
 
             <div style={{ marginTop: '1rem' }}>
