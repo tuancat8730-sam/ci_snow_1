@@ -125,7 +125,7 @@ export default function ContactForm() {
           <SectionHeader
             label="Get a Free Quote"
             title="Request Your Free Estimate"
-            subtitle="Fill out the form below and we'll get back to you within a few hours."
+            subtitle="Fill out the form below and we'll get back to you with a no-obligation estimate."
             light
           />
         </ScrollReveal>
