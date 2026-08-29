@@ -37,7 +37,7 @@ export default function Footer() {
           <div>
             <h3 className="footer-cta-title">Out at the first trace of snow!</h3>
             <p className="footer-cta-sub mb-0">
-              Join 200+ Edmonton homeowners and businesses who trust Capital Snow Removal.
+              Join 300+ Edmonton homeowners and businesses who trust Capital Snow Removal.
             </p>
           </div>
           <a
