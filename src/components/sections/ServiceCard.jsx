@@ -1,8 +1,7 @@
 import {
   FaHome, FaBuilding, FaWalking, FaSnowflake, FaTruck, FaTint,
-  FaCheck, FaArrowRight,
+  FaCheck,
 } from 'react-icons/fa'
-import { Link } from 'react-router-dom'
 
 const ICONS = {
   FaHome: <FaHome />,
@@ -34,12 +33,6 @@ export default function ServiceCard({ service }) {
               </li>
             ))}
           </ul>
-          <Link
-            to={`/services#${service.slug}`}
-            className="service-link"
-          >
-            Learn more <FaArrowRight size={11} />
-          </Link>
         </div>
       </div>
     </div>
