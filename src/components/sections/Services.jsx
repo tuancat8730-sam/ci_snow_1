@@ -1,4 +1,3 @@
-import { Link } from 'react-router-dom'
 import { SERVICES } from '../../data/services'
 import ServiceCard from './ServiceCard'
 import SectionHeader from '../ui/SectionHeader'
@@ -23,17 +22,6 @@ export default function Services() {
             </ScrollReveal>
           ))}
         </div>
-
-        <ScrollReveal>
-          <div className="text-center mt-5">
-            <Link
-              to="/services"
-              className="btn btn-outline-primary rounded-pill px-5 fw-semibold"
-            >
-              View All Services
-            </Link>
-          </div>
-        </ScrollReveal>
       </div>
     </section>
   )

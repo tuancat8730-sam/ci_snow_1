@@ -6,7 +6,6 @@ export const SERVICES = [
     icon: 'FaHome',
     shortDesc: 'Daily residential snow removal at the first trace of snow',
     features: [
-      'Daily snow removal at the first trace of snow',
       'Driveway, city sidewalk & front walkway',
       'Rock chip application available',
       'Seasonal contracts available',
