@@ -32,14 +32,11 @@ export default function HowItWorks() {
           <SectionHeader
             label="Simple Process"
             title="How It Works"
-            subtitle="Getting started is easy. Three simple steps and you'll never shovel snow yourself again."
+            subtitle="Getting started is easy. Three simple steps and you'll be ready for the next snowfall."
           />
         </ScrollReveal>
 
         <div className="row g-4 position-relative">
-          {/* Connector line (desktop only) */}
-          <div className="how-connector d-none d-lg-block" />
-
           {STEPS.map((step, i) => (
             <div className="col-lg-4" key={step.num}>
               <ScrollReveal delay={i + 1}>

@@ -4,17 +4,6 @@
   background: var(--color-light-bg);
 }
 
-.how-connector {
-  position: absolute;
-  top: 4.5rem;
-  left: calc(16.66% + 2rem);
-  right: calc(16.66% + 2rem);
-  height: 2px;
-  background: linear-gradient(to right, var(--color-primary), var(--color-accent));
-  opacity: 0.3;
-  z-index: 0;
-}
-
 .how-step-card {
   background: #fff;
   border-radius: 1.25rem;
