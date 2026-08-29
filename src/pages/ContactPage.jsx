@@ -6,8 +6,8 @@ const CONTACT_INFO = [
   {
     icon: <FaPhone />,
     label: 'Phone',
-    value: '(780) 555-0199',
-    href: 'tel:+17805550199',
+    value: '780-989-3987',
+    href: 'tel:7809893987',
   },
   {
     icon: <FaEnvelope />,
@@ -18,7 +18,7 @@ const CONTACT_INFO = [
   {
     icon: <FaClock />,
     label: 'Hours',
-    value: 'Mon–Fri 7am–6pm · Emergency 24/7',
+    value: 'Office: Mon–Fri 9am–4pm',
     href: null,
   },
   {
@@ -39,7 +39,7 @@ export default function ContactPage() {
             <p className="page-hero-label">Contact Us</p>
             <h1 className="page-hero-title">Get Your Free Quote</h1>
             <p className="page-hero-subtitle">
-              Reach out today and we'll get back to you within a few hours with a no-obligation estimate.
+              Reach out today and we'll get back to you with a no-obligation estimate.
             </p>
           </ScrollReveal>
         </div>

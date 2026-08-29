@@ -772,10 +772,12 @@
 }
 
 .contact-info-card .contact-info-value {
+  display: inline-block;
   font-weight: 600;
   font-size: 0.95rem;
   color: var(--color-dark-text);
   text-decoration: none;
+  word-break: break-word;
 }
 
 .contact-info-card a.contact-info-value:hover {
