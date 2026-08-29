@@ -37,9 +37,6 @@ export default function HowItWorks() {
         </ScrollReveal>
 
         <div className="row g-4 position-relative">
-          {/* Connector line (desktop only) */}
-          <div className="how-connector d-none d-lg-block" />
-
           {STEPS.map((step, i) => (
             <div className="col-lg-4" key={step.num}>
               <ScrollReveal delay={i + 1}>
