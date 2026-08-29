@@ -172,62 +172,6 @@
   flex-shrink: 0;
 }
 
-/* Pricing mobile slider */
-.pricing-slider-wrap {
-  position: relative;
-}
-
-.pricing-slider {
-  display: flex;
-  overflow-x: auto;
-  scroll-snap-type: x mandatory;
-  -webkit-overflow-scrolling: touch;
-  scrollbar-width: none;
-  gap: 1rem;
-  padding: 0.5rem 1rem 1rem;
-}
-
-.pricing-slider::-webkit-scrollbar {
-  display: none;
-}
-
-.pricing-slide {
-  flex: 0 0 85%;
-  scroll-snap-align: center;
-  display: flex;
-  flex-direction: column;
-}
-
-.pricing-slide .pricing-card {
-  height: 100%;
-  display: flex;
-  flex-direction: column;
-  transform: none !important;
-}
-
-.pricing-dots {
-  display: flex;
-  justify-content: center;
-  gap: 0.5rem;
-  margin-top: 1.25rem;
-}
-
-.pricing-dot {
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  border: none;
-  background: var(--color-border);
-  padding: 0;
-  cursor: pointer;
-  transition: background var(--transition-base), transform var(--transition-base);
-}
-
-.pricing-dot--active {
-  background: var(--color-primary);
-  transform: scale(1.35);
-}
-
 /* ── Testimonials ── */
 .section-testimonials {
   padding: var(--section-py) 0;
