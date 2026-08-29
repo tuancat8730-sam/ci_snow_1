@@ -32,7 +32,7 @@ export default function HowItWorks() {
           <SectionHeader
             label="Simple Process"
             title="How It Works"
-            subtitle="Getting started is easy. Three simple steps and you'll never shovel snow yourself again."
+            subtitle="Getting started is easy. Three simple steps and you'll be ready for the next snowfall."
           />
         </ScrollReveal>
 
