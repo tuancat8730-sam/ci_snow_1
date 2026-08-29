@@ -7,7 +7,7 @@ import ScrollReveal from '../ui/ScrollReveal'
 const HOW_HEAR_OPTIONS = [
   'Web Search',
   'Referral',
-  'Yellow Pages',
+  'Super Bowl Commercial',
   'Online Ad',
   'Other',
 ]
@@ -103,7 +103,7 @@ export default function ContactForm() {
       email: form.email,
       web_search: form.howHear.includes('Web Search'),
       referral: form.howHear.includes('Referral'),
-      yellow_pages: form.howHear.includes('Yellow Pages'),
+      super_bowl_commercial: form.howHear.includes('Super Bowl Commercial'),
       online_ad: form.howHear.includes('Online Ad'),
       other: form.howHear.includes('Other'),
       comments: form.comments,
