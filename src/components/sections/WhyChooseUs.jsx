@@ -1,5 +1,5 @@
 import {
-  FaClock, FaShieldAlt, FaBolt, FaHome, FaLeaf, FaThumbsUp,
+  FaClock, FaShieldAlt, FaBolt, FaHome, FaLeaf,
 } from 'react-icons/fa'
 import SectionHeader from '../ui/SectionHeader'
 import ScrollReveal from '../ui/ScrollReveal'
@@ -30,11 +30,6 @@ const BENEFITS = [
     title: 'Rock Chip Application Available',
     desc: 'Rock chip application available to combat slippery or icy conditions.',
   },
-  {
-    icon: <FaThumbsUp />,
-    title: 'Satisfaction Guaranteed',
-    desc: 'Not happy with our work? We will come back and re-do it - free of charge. Your satisfaction is our priority.',
-  },
 ]
 
 export default function WhyChooseUs() {
@@ -49,7 +44,7 @@ export default function WhyChooseUs() {
           />
         </ScrollReveal>
 
-        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        <div className="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
           {BENEFITS.map((b, i) => (
             <ScrollReveal key={b.title} delay={Math.min(i + 1, 5)}>
               <div className="col h-100">
