@@ -28,7 +28,7 @@ export default function Hero() {
             </h1>
             <p className="hero-subtitle animate-fade-in-down animate-fade-in-down-2">
               Homegrown in Edmonton and providing residential snow removal since 2002.
-              Licensed, fully insured, and ready when the next storm hits.
+              Licensed, fully insured, and ready when the next snowfall comes.
             </p>
 
             <div className="hero-cta-group animate-fade-in-down animate-fade-in-down-3">
