@@ -13,7 +13,6 @@ export async function submitContactForm(dispatch, formData) {
     await axios.post(FORM_ENDPOINT, formData, {
       headers: {
         'Content-Type': 'application/json',
-        'x-api-key': import.meta.env.VITE_FORM_KEY || '',
       },
     })
     dispatch({ type: FORM_SUBMIT_SUCCESS })
