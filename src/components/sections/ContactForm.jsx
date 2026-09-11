@@ -100,6 +100,7 @@ export default function ContactForm() {
       work_phone: form.workPhone,
       home_phone: form.homePhone,
       contact_method: form.contactType === 'Email' ? 'E' : 'P',
+      contact_type: form.contactType,
       email: form.email,
       web_search: form.howHear.includes('Web Search'),
       referral: form.howHear.includes('Referral'),
@@ -107,6 +108,7 @@ export default function ContactForm() {
       online_ad: form.howHear.includes('Online Ad'),
       other: form.howHear.includes('Other'),
       comments: form.comments,
+      request_description: form.comments,
     }
 
     await submit(payload)
