@@ -99,7 +99,7 @@ export default function ContactForm() {
       postal: form.postal,
       cell_phone: form.cellPhone,
       work_phone: form.workPhone,
-      phone: form.workPhone,
+      phone: form.cellPhone || form.workPhone || form.homePhone,
       home_phone: form.homePhone,
       contact_method: form.contactType === 'Email' ? 'E' : 'P',
       contact_type: form.contactType,
