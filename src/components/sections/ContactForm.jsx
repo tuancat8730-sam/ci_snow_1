@@ -91,6 +91,7 @@ export default function ContactForm() {
 
     const payload = {
       subject: 'New Quote request from the Snow Website',
+      name: `${form.firstName} ${form.lastName}`.trim(),
       first_name: form.firstName,
       last_name: form.lastName,
       address: form.address,
@@ -98,6 +99,7 @@ export default function ContactForm() {
       postal: form.postal,
       cell_phone: form.cellPhone,
       work_phone: form.workPhone,
+      phone: form.workPhone,
       home_phone: form.homePhone,
       contact_method: form.contactType === 'Email' ? 'E' : 'P',
       contact_type: form.contactType,
